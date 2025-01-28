@@ -24,8 +24,6 @@ module JekyllGetAPI
       File.write(cache_file, content)
     end
 
-    private
-
     def self.cache_valid?(cache_file, cache_expiry)
       File.exist?(cache_file) && (Time.now - File.mtime(cache_file)) < cache_expiry
     end

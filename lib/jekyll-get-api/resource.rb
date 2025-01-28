@@ -19,8 +19,6 @@ module JekyllGetAPI
       end
     end
 
-    private
-
     def self.fetch(resource)
       uri = URI(resource['url'])
       URI.open(uri) { |f| f.read }

@@ -1,8 +1,11 @@
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 Gem::Specification.new do |spec|
   spec.name          = 'jekyll-get-api'
   spec.summary       = 'Import remote JSON data and collections into a Jekyll site'
   spec.description   = 'Import remote JSON data and collections into a Jekyll site'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.authors       = ['Christian Mejlak']
   spec.email         = ['chris@mejlak.com']
   spec.homepage      = 'https://github.com/C-Mejlak/jekyll-get-api'
