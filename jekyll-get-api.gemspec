@@ -10,7 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['chris@mejlak.com']
   spec.homepage      = 'https://github.com/C-Mejlak/jekyll-get-api'
   spec.licenses      = ['MIT']
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = ['lib/jekyll-get-api.rb', 'lib/jekyll-get-api/cache.rb', 'lib/jekyll-get-api/collection.rb',
+                        'lib/jekyll-get-api/data.rb', 'lib/jekyll-get-api/resource.rb']
   spec.require_paths = ['lib']
   spec.add_dependency 'jekyll', '~> 4.0'
 end
